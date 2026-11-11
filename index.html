@@ -46,7 +46,7 @@ nav {
 nav a {
     color: #FAF6F0;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 10px;
     font-size: 14px;
     letter-spacing: 1px;
     transition: 0.3s;
@@ -124,6 +124,43 @@ td {
 tr:hover td {
     background-color: #F3E5DF;
 }
+.project-card {
+    background: #FFFDFC;
+    border: 1px solid #D8BEB0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+}
+.project-card h3 {
+    margin-top: 0;
+    color: #642F3D;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+input, textarea {
+    padding: 12px;
+    border: 1px solid #C7A394;
+    border-radius: 6px;
+    font-family: inherit;
+    background-color: #FFFDFC;
+}
+button {
+    background-color: #642F3D;
+    color: #FAF6F0;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #8B4355;
+}
 footer {
     background-color: #642F3D;
     color: #FAF6F0;
@@ -151,13 +188,14 @@ footer {
 </head>
 <body>
 <header id="home">
-<h1>Ai-Yen's Developer Portfolio</h1>
-<p>Hi! I'm Ai-Yen, an aspiring web developer.</p>
+<h1>Ai-Yen Tejada</h1>
+<p>Aspiring Web Developer & IT Student</p>
 <nav>
 <a href="#about">About</a> |
 <a href="#skills">Skills</a> |
 <a href="#education">Education</a> |
 <a href="#projects">Projects</a> |
+<a href="#goals">Goals</a> |
 <a href="#contact">Contact</a>
 </nav>
 </header>
@@ -169,6 +207,7 @@ footer {
 I am a passionate second-year IT student at National University Fairview with a deep enthusiasm for creating elegant, user-friendly web applications. My goal is to blend creativity and code to build meaningful digital experiences. Outside of coding, I enjoy exploring new design trends and continuously expanding my technical toolkit.
 </p>
 </section>
+
 <section id="skills">
 <h2>My Technical Skills</h2>
 <ul>
@@ -179,6 +218,7 @@ I am a passionate second-year IT student at National University Fairview with a 
 <li>Python</li>
 </ul>
 </section>
+
 <section id="education">
 <h2>Educational Background</h2>
 <table>
@@ -200,18 +240,7 @@ I am a passionate second-year IT student at National University Fairview with a 
 </tr>
 </table>
 </section>
+
 <section id="projects">
 <h2>My Projects</h2>
-<p>More projects coming soon!♡</p>
-</section>
-<section id="contact">
-<h2>Contact Me</h2>
-<p>Email: jenaiyentejada@gmail.com</p>
-</section>
-</main>
-<footer>
-<p>♡ Designed with love by Ai-Yen♡</p>
-<p>© 2026 Ai-Yen's Portfolio</p>
-</footer>
-</body>
-</html>
+<div class="project-card">
